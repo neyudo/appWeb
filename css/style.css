@@ -119,12 +119,12 @@ main a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    padding: 15px 10px;
 }
 .card .card__container .card__item1__heart {
-
+    justify-self: end;
     grid-column: 2;
-    width: 24px;
-    height: 24px;
+    height: auto;
 }
 .card .card__container .card__item1__heart img {
     width: 24px;
