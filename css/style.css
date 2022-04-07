@@ -100,6 +100,8 @@ main a {
 }
 /* ______________Card________________ */
 .card {
+    min-height: calc(100vh - 252px);
+    max-height: auto;
     background-color: #d7efe6;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -120,6 +122,7 @@ main a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     padding: 15px 10px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.171);
 }
 .card .card__container .card__item1__heart {
     justify-self: end;
@@ -154,17 +157,7 @@ main a {
 .card .card__container .card__item4__price img {
     width: 1em;
 }
-
-/* c
-ard__item1__heart">
-                                <img src="https://i.postimg.cc/5072RWVD/download.png" alt="">
-                            </figure>
-                            <div class="card__item2__coin">
-                                <h3>BTC USDT</h3>
-                            </div>
-                            <div class="card__item3__parra">
-                                <p>
-                                    Lorem ipsum dolor sit.
-                                </p>
-                            </div>
-                            <div class="card__item4__price"> */
+.card .card__container .img__bg {
+    justify-self: center;
+    grid-area: 2/2/4/3;
+}
